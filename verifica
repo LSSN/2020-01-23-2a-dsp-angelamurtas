@@ -1,4 +1,12 @@
-//la sintesi sottrativa ci permette di 
+// il rapporto tra analisi e sintesi  si ha per poterle anallizzare.
+//Abbiamo diveresi tipi di tecniche di sintesi:sottrativa,adattiva,mudulazione e non lineari.
+//sintesi sottrativa si riferisce a un modello sintesi che ci permette di sottrarre dei suoni e viene analizzata attraverso 
+//lo spettogramma il sonogramma e la forma d'onda.
+//noi utillizziamo il il diagramma cartesiano per scrivere le coordinate .
+//LO SPETTROGRAMMA=composto dalla frequenza nelle x del piano cartesiano e ampizza nella y
+//LO SONORAMMA= composto dalla frequenza nelle y e timbro nella x
+//FORMA D'ONDA=ampizza nella u e timbro bella x
+//i filtri indica nei limiti in cui l'onda deve passare :lop=passa basso,hip=passa alto passabanda=inieme dei 2 viltri prima passa basso e poi passa alto
 import("stdfaust.lib");
 cutoff=vslider("cut-off[style:knob]",1000,20,20000,1);
 process = fi.lowpass (2,cutoff)  : fi.highpass(2,cutoff);
